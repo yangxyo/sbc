@@ -30,8 +30,10 @@ setlocal foldlevel=1        " 设置折叠层数为
 set foldlevelstart=99       " 打开文件是默认不折叠代码
 " 如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块
 set clipboard=unnamed       " 复制到系统寄存器
-set listchars=tab:»»,trail:■
+set listchars=tab:\¦\ ,trail:■,extends:>,precedes:<,nbsp:+
 set list
+hi SpecialKey ctermfg=239 ctermbg=8
+
 " 将文档中存在的tab转换为空格
 if has("autocmd")
     au BufReadPost * if &modifiable | retab | endif

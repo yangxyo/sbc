@@ -37,7 +37,8 @@ zinit lucid for \
   OMZP::sudo \
   OMZL::directories.zsh \
   OMZL::theme-and-appearance.zsh \
-  OMZL::clipboard.zsh
+  OMZL::clipboard.zsh \
+  OMZL::history.zsh
 
 zinit ice blockf; zinit light zsh-users/zsh-completions
 zinit ice depth=1; zinit light romkatv/powerlevel10k
@@ -115,3 +116,7 @@ export iterm2_hostname=45.40.206.138
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+if [[ -f $HOME/.zshrc.local ]]; then
+  source $HOME/.zshrc.local
+fi
