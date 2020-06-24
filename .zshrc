@@ -49,6 +49,7 @@ zinit ice atclone"dircolors -b LS_COLORS > clrs.zsh" \
 
 autoload -Uz compinit
 compinit
+zinit cdreplay -q
 ########################################
 # envirenment
 ########################################
