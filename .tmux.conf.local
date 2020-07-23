@@ -71,7 +71,7 @@ set -g @resurrect-save-shell-history 'on'
 set -g @resurrect-capture-pane-contents 'on'
 set -g @resurrect-strategy-nvim 'session'
 set -g @continuum-restore 'on'
-set -g @continuum-save-interval '1'
+set -g @continuum-save-interval '5'
 set -g @open-S 'https://www.google.com/search?q='
 
 run '~/.tmux/plugins/tpm/tpm'
